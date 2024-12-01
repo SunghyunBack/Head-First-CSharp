@@ -12,9 +12,7 @@
 - c# 개발자가 UI를 디자인할때 사용하는 마크업 언어이다.
 <HTML언어와 유사하다>
 
-
-ex)
-'''
+```
         <Window x:Class="MatchGame.MainWindow"
                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -44,7 +42,7 @@ ex)
                 <TextBlock x:Name="TimeTextBlock" HorizontalAlignment="Center" Grid.Row="4" Text="Elapse time" VerticalAlignment="Center" Grid.ColumnSpan="4" FontSize="36" MouseDown="TimeTextBlock_MouseDown" TextWrapping="Wrap"/>
             </Grid>
         </Window>
-'''
+```
 
 
 ## c# 코드
