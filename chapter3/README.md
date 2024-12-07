@@ -10,7 +10,7 @@
 - ex) 객체 생성 ```House house = new House();``` House 타입의 변수이름은 house이면 new 문을 사용해 객체를 생선한다.
 - 다음의 그림은 다음과 같이 이야기 할수 있다.
   
-  ```
+```
 House PineStreet38 = new House();
 House ElemLane26A = new House();
 House MapleDrive115 = new House();
@@ -23,6 +23,7 @@ House MapleDrive115 = new House();
 은 "house 객체를 생성했다" 혹은 "house 인스턴스를 생성했다" 로 표현할수 있다.
 
 ##필드를 사용해 인스턴스의 상태 기록하기
+
 ![image](https://github.com/user-attachments/assets/730021e8-c2bd-42d1-81a3-f81c09dfafbc)
 
 - 클래스는 크게 필드와 메서드로 내용으로 구성되어 있다.
