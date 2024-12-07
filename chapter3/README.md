@@ -9,11 +9,13 @@
 
 - ex) 객체 생성 ```House house = new House();``` House 타입의 변수이름은 house이면 new 문을 사용해 객체를 생선한다.
 - 다음의 그림은 다음과 같이 이야기 할수 있다.
+  
   ```
 House PineStreet38 = new House();
 House ElemLane26A = new House();
 House MapleDrive115 = new House();
   ```
+
 - 생성된 각각의 객체들은 GrowLawn, ReceiveDeliveries, AccurePropertyTaxes, NeedRepairs 메서드를 사용할수 있다.
 
 ★객체를 생성한다는 표현은 인스턴스를 생선했다는 표현과 같다.
@@ -38,5 +40,21 @@ House MapleDrive115 = new House();
 ★ 클래스 전체를 static으로 선언하면 클래스의 모든 멤버가 static으로 선언되어야 한다.
 
 즉 기존에 객체 생성을 할대
-```CardPicker cardpicker = new CardPicker();``` 과 같이 생성한후 사용했다면 이러한 과정 없이 바로
-```CardPicker.PickSomeCards(numberOfCards)```과 같이 사용할수 있다. 왜냐하면 static으로 선언되어 모든 인스턴스가 클래스멤버를 공유하고 있기 때문이다.
+``` CardPicker cardpicker = new CardPicker(); ``` 과 같이 생성한후 사용했다면 이러한 과정 없이 바로
+``` CardPicker.PickSomeCards(numberOfCards) ```과 같이 사용할수 있다. 왜냐하면 static으로 선언되어 모든 인스턴스가 클래스멤버를 공유하고 있기 때문이다.
+
+## 고마운 기억 공간, 힙(heap)
+
+![image](https://github.com/user-attachments/assets/754ddc76-80c6-47c9-9080-8cc98bd2383d)
+
+```
+Clown oneClown = new Clown();
+Clown anotehrClown = new Clown();
+Clown Clown3 = new Clown();
+```
+
+다음과 같이 객체를 선언하게 된다면 
+![image](https://github.com/user-attachments/assets/c04f70db-3771-47fd-a2e0-e3517d4c6f8f)
+
+힙(heap)이라는 공간에 다음의 그림처럼 추가가 된다.
+이렇게 각각 객체가 추가되기 때문에 객체들끼리의 필드(상태)가 다르게 저장되어 질수 있다.
