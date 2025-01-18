@@ -1,6 +1,6 @@
 # 참조 이해하기
 
-
+![2025-01-18 14 41 00](https://github.com/user-attachments/assets/b0cdbc4f-b23b-461d-8113-26e0afeabbf0)
 
 ### 참조 타입(Reference Type)
 
